@@ -25,7 +25,9 @@
     } ifelse
 } loop
 
-(%stdout) (w) file
-dup n ns cvs writestring
-(\n) writestring
-(%stdout) (w) file flushfile
+n 1 gt {
+    (%stdout) (w) file
+    dup n ns cvs writestring
+    (\n) writestring
+    (%stdout) (w) file flushfile
+} if
