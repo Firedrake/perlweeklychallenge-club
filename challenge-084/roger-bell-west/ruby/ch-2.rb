@@ -20,27 +20,6 @@ def fs(*s)
   return t
 end
 
-#sub fs(@s) {
-#  my $t=0;
-#  my $maxx=@s.elems-1;;
-#  my $maxy=@s[0].elems-1;
-#  for (0..$maxx-1) -> $x {
-#    for (0..$maxy-1) -> $y {
-#      if (@s[$x][$y]==1) {
-#        for (1..min($maxx-$x,$maxy-$y)) -> $d {
-#          if (@s[$x+$d][$y]==1 &&
-#                @s[$x][$y+$d]==1 &&
-#                @s[$x+$d][$y+$d]==1
-#                  ) {
-#            $t++;
-#          }
-#        }
-#      }
-#    }
-#  }
-#  return $t;
-#}
-
 require 'test/unit'
 
 class TestFs < Test::Unit::TestCase
